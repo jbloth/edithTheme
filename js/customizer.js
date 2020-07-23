@@ -14,7 +14,7 @@
 
   wp.customize('footer_background_color', function(value) {
     value.bind(function(newval) {
-      $('footer').css('background-color', newval);
+      $('.site-footer').css('background-color', newval);
     });
   });
 
@@ -32,7 +32,7 @@
 
   wp.customize('footer_text_color', function(value) {
     value.bind(function(newval) {
-      $('footer').css('color', newval);
+      $('.site-footer').css('color', newval);
     });
   });
 })(jQuery);

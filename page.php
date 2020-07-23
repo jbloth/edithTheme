@@ -30,7 +30,7 @@ get_header();?>
           else: 
           ?>
 
-         <p>Nothing to see here.</p>
+        <p><?php _e( 'Nothing to see here.', 'edith'); ?></p>
 
           <?php endif; ?>
         </section>

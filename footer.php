@@ -9,7 +9,7 @@
 
 ?>
 
-    <footer>
+    <footer class="site-footer">
         <section class="footer-sidebars">
             <div class="footer-sidebar">
                 <?php 
@@ -33,12 +33,16 @@
                 ?>
             </div>
         </section>
+
         <hr class="footer-separator"/>
+
         <section class="footer-nav">
             <?php wp_nav_menu(
                 array('theme_location' => 'edith_footer_nav')
             );?>
         </section>
+
+        <hr class="footer-separator"/>
 
         <section class="footer-copyright">
             <p class="copyright-text"><?php echo get_theme_mod('set_copyright'); ?></p>

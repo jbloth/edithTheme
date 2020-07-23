@@ -27,13 +27,13 @@
         </div>
         <div class="pagination-links">
             <?php the_posts_pagination( array(
-              'mid_size'  => 2,
-              'prev_text' => '<< Previous',
-              'next_text' => 'Next >>'
+              'mid_size'  => 4,
+              'prev_text' => __( '<< Previous', 'edith' ),
+              'next_text' => __( 'Next >>', 'edith' )
             ) ); ?>
         </div> 
       <?php else: ?>
-        <p>Nothing to see here.</p>
+        <p><?php _e( 'Nothing to see here.', 'edith'); ?></p>
       <?php endif; ?>
     </section>
   </main>

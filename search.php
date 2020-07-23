@@ -14,7 +14,7 @@ get_header();?>
 							</div>
           </div>
 
-					<h2 class="search-results__title">Search results for: <?php echo get_search_query(); ?></h2>
+					<h2 class="search-results__title"><?php _e( 'Search results for: ', 'edith'); ?><?php echo get_search_query(); ?></h2>
 
           <?php if( have_posts() ): ?>
             <div class="masy-grid">
@@ -31,15 +31,13 @@ get_header();?>
             <div class="pagination-links">
               <?php the_posts_pagination( array(
                   'mid_size'  => 2,
-                  'prev_text' => '<< Previous',
-                  'next_text' => 'Next >>'
+                  'prev_text' => __( '<< Previous', 'edith' ),
+                  'next_text' => __( 'Next >>', 'edith' )
               ) ); ?>
             </div> 
 
           <?php else: ?>
-
-            <p>Nothing found.</p>
-
+            <p><?php _e( 'Nothing found, sorry.', 'edith'); ?></p>
           <?php endif; ?>
         </section>
     </main>

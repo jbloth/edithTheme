@@ -22,8 +22,8 @@ get_header();?>
 
                   <?php the_posts_pagination( array(
                     'mid_size'  => 2,
-                    'prev_text' => '<< Previous',
-                    'next_text' => 'Next >>'
+                    'prev_text' => __( '<< Previous', 'edith' ),
+                    'next_text' => __( 'Next >>', 'edith' )
                   ) ); ?>
                 </div> 
               <?php

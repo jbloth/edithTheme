@@ -2,8 +2,6 @@
 Theme Name: Edith
 Text Domain: edith
 Version: 1.0
-Requires at least: 4.7
-Requires PHP: 5.2.4
 Description: Minimal Blog and Portfolio theme
 Tags: blog, custom-background, custom-colors, custom-logo, custom-menu
 Author: Juliane Blothner
@@ -11,19 +9,23 @@ Author URI: https://jbmakesthings.netlify.app/
 Theme URI: 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-All files, unless otherwise stated, are released under the GNU General Public
-License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
-
+Tesxt Domain: edith
 */
 
 :root {
-  --color-bg: #ffffff;
+  /* --color-bg: #ffffff;
   --color-header: #f5f5ed;
   --color-footer: #f5f5ed;
   --color-text: #2f2f2f;
   --color-text-light: #6f6f6f;
-  --color-highlight: #f58e6d;
+  --color-highlight: #f58e6d; */
+
+  --color-bg: #f377ff;
+  --color-header: #2d22c7;
+  --color-footer: #f1f12b;
+  --color-text: #5c1919;
+  --color-text-light: #f377ff;
+  --color-highlight: #1c39e0;
 
   /* --font-logo: 'Arima Madurai', cursive; */
   --font-logo: 'Saira Condensed', sans-serif;
@@ -159,6 +161,10 @@ textarea {
   border: 1px solid var(--color-text-light);
 }
 
+input[type='submit' i] {
+  padding: 2px 8px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -279,7 +285,6 @@ ul.menu {
 
 /* ---- sidebar ---- */
 .widget-wrapper {
-  /* border-top: 1px solid var(--color-text-light); */
   padding: 2rem 0;
   text-align: left;
 }
@@ -294,7 +299,7 @@ ul.menu {
 }
 
 /* ---- footer ---- */
-footer {
+.site-footer {
   background-color: var(--color-footer);
   padding: 3rem 6rem;
 }
@@ -408,6 +413,10 @@ footer {
   margin-bottom: 4rem;
   border-radius: 6px;
   overflow: hidden;
+}
+
+.post-preview {
+  border: 2px solid transparent;
 }
 
 .post-preview:hover {
@@ -680,7 +689,7 @@ footer {
     padding: 8rem 4rem;
   }
 
-  .mob-modal ul li {
+  .mob-modal .menu .menu-item {
     float: none;
     display: block;
     min-width: 200px;
